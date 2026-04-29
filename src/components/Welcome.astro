@@ -1,36 +1,78 @@
----
----
+<section class="min-h-screen flex items-center justify-center">
+  
+  <!-- Contenedor principal -->
+  <div class="w-full max-w-md bg-white overflow-hidden shadow-lg">
 
-<div class="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 flex items-center justify-center px-4 py-8 sm:py-12">
-	<div class="max-w-4xl mx-auto text-center w-full">
-		<div class="mb-6 sm:mb-8">
-			<div class="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 bg-blue-600 rounded-full mb-4 sm:mb-6">
-				<svg class="w-8 h-8 sm:w-10 sm:h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-				</svg>
-			</div>
-		</div>
-		<h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight">
-			Próximamente
-		</h1>
-		<p class="text-lg sm:text-xl text-gray-300 mb-6 sm:mb-8 max-w-2xl mx-auto px-4 sm:px-0 leading-relaxed">
-			Estamos trabajando arduamente para traerte una experiencia increíble. Nuestro sitio estará disponible muy pronto.
-		</p>
-		<div class="bg-gray-800 bg-opacity-50 rounded-lg p-4 sm:p-6 mb-6 sm:mb-8 max-w-md mx-auto">
-			<p class="text-gray-400 mb-2 text-sm sm:text-base">
-				Lanzamiento estimado:
-			</p>
-			<p class="text-xl sm:text-2xl font-semibold text-white">
-				Muy pronto
-			</p>
-		</div>
-		<div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4 sm:px-0">
-			<button class="w-full sm:w-auto px-6 sm:px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-200 font-semibold text-sm sm:text-base">
-				Notificarme
-			</button>
-			<button class="w-full sm:w-auto px-6 sm:px-8 py-3 bg-transparent text-white border-2 border-white rounded-lg hover:bg-white hover:text-gray-900 transition-colors duration-200 font-semibold text-sm sm:text-base">
-				Saber más
-			</button>
-		</div>
-	</div>
-</div>
+    <!-- Fondo degradado -->
+    <div class="h-44 bg-gradient-to-r from-purple-600 via-indigo-700 to-pink-500 relative">
+      
+      <!-- Avatar -->
+      <div class="absolute left-1/2 transform -translate-x-1/2 translate-y-20">
+        <img 
+          src="/images/power-clean-logo.webp" 
+          alt="avatar"
+          class="w-28 h-28 rounded-full border-4 border-white object-cover shadow-md"
+        >
+      </div>
+    </div>
+
+    <!-- Contenido -->
+    <div class="pt-20 px-8 pb-8 text-center">
+
+      <!-- Nombre -->
+      <h2 class="text-2xl font-semibold text-gray-800">
+        Rock Agency
+      </h2>
+
+      <!-- Descripción -->
+      <p class="text-gray-500 text-sm mt-3 leading-relaxed">
+        Rock Agency es una agencia digital y estudio web especializada en productos, comercio y sitios web SaaS.
+      </p>
+
+      <!-- Redes sociales -->
+      <div class="flex justify-center gap-4 mt-6">
+        <div class="w-11 h-11 bg-black text-white flex items-center justify-center rounded-full">f</div>
+        <div class="w-11 h-11 bg-black text-white flex items-center justify-center rounded-full">ig</div>
+        <div class="w-11 h-11 bg-black text-white flex items-center justify-center rounded-full">in</div>
+        <div class="w-11 h-11 bg-black text-white flex items-center justify-center rounded-full">yt</div>
+      </div>
+
+      <!-- Mapa -->
+      <div class="mt-6 rounded-2xl overflow-hidden shadow-sm">
+        <img 
+          src="https://maps.googleapis.com/maps/api/staticmap?center=Dubai&zoom=13&size=600x300&maptype=roadmap&markers=color:blue%7CDubai"
+          alt="map"
+          class="w-full h-44 object-cover"
+        >
+      </div>
+
+      <!-- Botón ubicación -->
+      <button class="mt-4 bg-indigo-600 text-white text-sm px-6 py-2 rounded-full shadow">
+        Ver nuestra ubicación
+      </button>
+
+      <!-- Botón principal -->
+      <div class="mt-7">
+        <a href="#" class="flex items-center justify-between bg-gray-900 text-white px-6 py-3 rounded-full shadow-lg">
+          <span>Visitar nuestro sitio web</span>
+          <span class="text-lg">↗</span>
+        </a>
+      </div>
+
+      <!-- Link inferior -->
+      <div class="mt-4">
+        <a href="#" class="flex items-center justify-between bg-gray-100 px-5 py-2 rounded-full text-sm text-gray-600 border">
+          <span>smarbio.ai/tupagina</span>
+          <span>↗</span>
+        </a>
+      </div>
+
+      <!-- Texto pequeño -->
+      <p class="text-xs text-gray-400 mt-2">
+        Actualiza para eliminar
+      </p>
+
+    </div>
+  </div>
+
+</section>
