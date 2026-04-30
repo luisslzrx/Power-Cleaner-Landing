@@ -1,11 +1,17 @@
 ---
 import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+import Contenido from '../components/Contenido.astro';
+import Redes from '../components/Redes.astro';
+import Hero from '../components/Hero.astro';
+
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
+<Layout class="text-white max-w-xl mx-auto min-h-dvh bg-[#D30E1C] flex flex-col items-center">
+	<Hero />
+	<Redes />
+	<Contenido />
 </Layout>
