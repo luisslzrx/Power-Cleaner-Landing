@@ -14,77 +14,68 @@ import Limpieza from './Iconos/Limpieza-icono.astro';
     <h2 class="text-3xl font-bold text-white text-center mb-6">Contáctanos</h2>
     <div class="space-y-2 w-full">
       
-      <!-- Primera fila: 2 tarjetas en columnas -->
-      <div class="grid grid-cols-2 gap-2">
-        <a href="#" class="
-          relative rounded-3xl overflow-hidden
-          backdrop-blur-md bg-white border border-gray-200 shadow-2xl
-          flex flex-col items-start
-          hover:scale-105 hover:contrast-125
-          transition
-          group
-          p-7 min-h-[180px]
-        ">
-          <span
-            class="absolute bottom-2 left-4 font-bold text-lg text-[#047CBD] group-hover:-translate-y-1 transition-transform line-clamp-2">Página web</span>
-
-          <Limpieza 
-            class="absolute -right-4 -bottom-4 -rotate-6 size-28 group-hover:-rotate-12 group-hover:scale-125 transition-transform text-red-600 opacity-20 hover:scale-150 active:scale-200 cursor-pointer"
-          />
-
-          <span class="absolute top-2 left-4 text-[#047CBD] border rounded-xl px-1 py-0.5 line-clamp-1">Visita nuestro sitio</span>
-        </a>
-
-        <a href="#" class="
-          relative rounded-3xl overflow-hidden
-          backdrop-blur-md bg-white border border-gray-200 shadow-2xl
-          flex flex-col items-start
-          hover:scale-105 hover:contrast-125
-          transition
-          group
-          p-7 min-h-[180px]
-        ">
-          <span
-            class="absolute bottom-2 left-4 font-bold text-lg text-[#047CBD] group-hover:-translate-y-1 transition-transform line-clamp-2">Productos</span>
-
-          <Productos 
-            class="absolute -right-4 -bottom-4 -rotate-6 size-28 group-hover:-rotate-12 group-hover:scale-125 transition-transform text-red-600 opacity-20 hover:scale-150 active:scale-200 cursor-pointer"
-          />
-
-          <span class="absolute top-2 left-4 text-[#047CBD] border rounded-xl px-1 py-0.5 line-clamp-1">Línea completa</span>
-        </a>
-      </div>
-
-      <!-- Segunda fila: tarjeta de ancho completo -->
+      <!-- Tarjeta de ancho completo -->
       <a href="#" class="
         relative rounded-3xl overflow-hidden
         backdrop-blur-md bg-white border border-gray-200 shadow-2xl
-        flex flex-col items-start
-        hover:scale-105 hover:contrast-125
+        flex flex-col items-start justify-between
         transition
         group
-        w-full p-7 min-h-[90px]
-      ">
-        <span
-          class="absolute bottom-2 left-4 font-bold text-lg text-[#047CBD] group-hover:-translate-y-1 transition-transform line-clamp-2">Correo electrónico</span>
-
-        <span class="absolute top-2 left-4 text-[#047CBD] border rounded-xl px-1 py-0.5 line-clamp-1">Contáctanos</span>
+        w-full px-6 py-4       ">
+        <div class="flex items-center justify-between w-full">
+          <h3 class="text-xl font-bold text-[#047CBD]">Página web</h3>
+          <svg class="w-5 h-5 text-[#047CBD]" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
+          </svg>
+        </div>
       </a>
 
-      <!-- Tercera fila: tarjeta de ancho completo -->
+      <!-- Tarjeta de ancho completo -->
       <a href="#" class="
         relative rounded-3xl overflow-hidden
         backdrop-blur-md bg-white border border-gray-200 shadow-2xl
-        flex flex-col items-start
-        hover:scale-105 hover:contrast-125
+        flex flex-col items-start justify-between
         transition
         group
-        w-full p-7 min-h-[90px]
-      ">
-        <span
-          class="absolute bottom-2 left-4 font-bold text-lg text-[#047CBD] group-hover:-translate-y-1 transition-transform line-clamp-2">Llamada telefónica</span>
+        w-full px-6 py-4       ">
+        <div class="flex items-center justify-between w-full">
+          <h3 class="text-xl font-bold text-[#047CBD]">Productos</h3>
+          <svg class="w-5 h-5 text-[#047CBD]" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
+          </svg>
+        </div>
+      </a>
 
-        <span class="absolute top-2 left-4 text-[#047CBD] border rounded-xl px-1 py-0.5 line-clamp-1">Llámanos ahora</span>
+      <!-- Tarjeta de ancho completo -->
+      <a href="#" class="
+        relative rounded-3xl overflow-hidden
+        backdrop-blur-md bg-white border border-gray-200 shadow-2xl
+        flex flex-col items-start justify-between
+        transition
+        group
+        w-full px-6 py-4       ">
+        <div class="flex items-center justify-between w-full">
+          <h3 class="text-xl font-bold text-[#047CBD]">Correo electrónico</h3>
+          <svg class="w-5 h-5 text-[#047CBD]" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
+          </svg>
+        </div>
+      </a>
+
+      <!-- Tarjeta de ancho completo -->
+      <a href="#" class="
+        relative rounded-3xl overflow-hidden
+        backdrop-blur-md bg-white border border-gray-200 shadow-2xl
+        flex flex-col items-start justify-between
+        transition
+        group
+        w-full px-6 py-4       ">
+        <div class="flex items-center justify-between w-full">
+          <h3 class="text-xl font-bold text-[#047CBD]">Llamada telefónica</h3>
+          <svg class="w-5 h-5 text-[#047CBD]" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
+          </svg>
+        </div>
       </a>
     </div>
   </main>
