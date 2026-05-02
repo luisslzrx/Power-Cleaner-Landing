@@ -121,7 +121,7 @@
   </div>
 </section>
 
-<script>
+<script is:inline>
   let currentIndex = 0;
   const totalSlides = 4;
 
@@ -135,7 +135,9 @@
     }
     
     const carousel = document.getElementById('carousel');
-    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+    if (carousel) {
+      carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
   }
 
   // Auto-play opcional
