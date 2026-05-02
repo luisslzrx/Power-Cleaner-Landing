@@ -1,0 +1,145 @@
+---
+---
+
+<section class="pt-8 px-4 pb-16 w-full">
+  <!-- Divider con texto centrado -->
+  <div class="relative mb-8">
+    <div class="absolute inset-0 flex items-center">
+      <div class="w-full h-px bg-gradient-to-r from-transparent via-white/60 to-transparent"></div>
+    </div>
+    <div class="relative flex justify-center">
+      <span class="bg-[#D30E1C] px-4 text-sm text-white font-medium">TESTIMONIOS</span>
+    </div>
+  </div>
+  
+  <h2 class="text-3xl font-bold text-white text-center mb-8">Lo que dicen nuestros clientes</h2>
+  
+  <!-- Carrusel de comentarios -->
+  <div class="relative max-w-4xl mx-auto">
+    <div class="overflow-hidden rounded-3xl">
+      <div class="flex transition-transform duration-500 ease-in-out" id="carousel">
+        
+        <!-- Comentario 1 -->
+        <div class="w-full flex-shrink-0 px-4">
+          <div class="backdrop-blur-md bg-white/20 border border-white/30 shadow-2xl rounded-3xl p-6">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-[#047CBD] rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">
+                JD
+              </div>
+              <div>
+                <h4 class="font-bold text-white">Juan Díaz</h4>
+                <p class="text-sm text-white/80">Gerente de Hotel</p>
+              </div>
+            </div>
+            <p class="text-white/90 italic">
+              "Excelente servicio profesional. Power Cleaner transformó completamente nuestras instalaciones. El equipo es muy profesional y los resultados superaron nuestras expectativas."
+            </p>
+            <div class="flex mt-4">
+              <span class="text-yellow-400">★★★★★</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Comentario 2 -->
+        <div class="w-full flex-shrink-0 px-4">
+          <div class="backdrop-blur-md bg-white/20 border border-white/30 shadow-2xl rounded-3xl p-6">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-[#047CBD] rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">
+                MG
+              </div>
+              <div>
+                <h4 class="font-bold text-white">María García</h4>
+                <p class="text-sm text-white/80">Propietaria de Restaurante</p>
+              </div>
+            </div>
+            <p class="text-white/90 italic">
+              "Contratamos sus servicios de limpieza profunda y quedó impecable. Muy puntuales, detallistas y con productos de alta calidad. Totalmente recomendados."
+            </p>
+            <div class="flex mt-4">
+              <span class="text-yellow-400">★★★★★</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Comentario 3 -->
+        <div class="w-full flex-shrink-0 px-4">
+          <div class="backdrop-blur-md bg-white/20 border border-white/30 shadow-2xl rounded-3xl p-6">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-[#047CBD] rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">
+                CR
+              </div>
+              <div>
+                <h4 class="font-bold text-white">Carlos Rodríguez</h4>
+                <p class="text-sm text-white/80">Administrador de Edificio</p>
+              </div>
+            </div>
+            <p class="text-white/90 italic">
+              "Llevamos más de 2 años trabajando con Power Cleaner y siempre han cumplido con los estándares más altos de calidad. Servicio confiable y profesional."
+            </p>
+            <div class="flex mt-4">
+              <span class="text-yellow-400">★★★★★</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Comentario 4 -->
+        <div class="w-full flex-shrink-0 px-4">
+          <div class="backdrop-blur-md bg-white/20 border border-white/30 shadow-2xl rounded-3xl p-6">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-[#047CBD] rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">
+                AL
+              </div>
+              <div>
+                <h4 class="font-bold text-white">Ana López</h4>
+                <p class="text-sm text-white/80">Directora de Escuela</p>
+              </div>
+            </div>
+            <p class="text-white/90 italic">
+              "Excelente atención y resultados impecables. Su equipo de limpieza profunda dejó nuestras instalaciones como nuevas. Muy contenta con el servicio."
+            </p>
+            <div class="flex mt-4">
+              <span class="text-yellow-400">★★★★★</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Controles del carrusel -->
+    <div class="flex justify-center mt-6 space-x-2">
+      <button onclick="moveCarousel(-1)" class="w-10 h-10 bg-white/20 backdrop-blur-md border border-white/30 rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+        </svg>
+      </button>
+      <button onclick="moveCarousel(1)" class="w-10 h-10 bg-white/20 backdrop-blur-md border border-white/30 rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<script>
+  let currentIndex = 0;
+  const totalSlides = 4;
+
+  function moveCarousel(direction) {
+    currentIndex += direction;
+    
+    if (currentIndex < 0) {
+      currentIndex = totalSlides - 1;
+    } else if (currentIndex >= totalSlides) {
+      currentIndex = 0;
+    }
+    
+    const carousel = document.getElementById('carousel');
+    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
+
+  // Auto-play opcional
+  setInterval(() => {
+    moveCarousel(1);
+  }, 5000);
+</script>
